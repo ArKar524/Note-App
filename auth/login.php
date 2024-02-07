@@ -41,10 +41,9 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
+    <div class="row">
+        <div class="container d-flex justify-content-center align-items-center " style="height: 100vh;" >
+            <div class="col-md-3">
                 <form class="my-5" method="post">
                     <div class="card my-5 rounded-2">
                         <div class=" card-header">
@@ -54,16 +53,15 @@
                             <label for="email">Email</label>
                             <input type="email" required class="form-control" name="email">
                             <label for="password">Password</label>
-                            <input type="password" required class="form-control" name="password">
-                        </div>
-                        <div class="card-footer">
+                            <input type="password" required class="form-control mb-3" name="password">
+                            <div class="d-grid gap-2 col-12 mx-auto mb-3">
+                                <button class="btn btn-primary btn-block" name="loginBtn">Login</button>
+                            </div>
                             <span>Have Not Account Yet !</span><a href="register.php" class="px-2">click here</a>
-                            <button class="btn btn-primary float-end" name="loginBtn">Login</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2"></div>
         </div>
     </div>
 </body>

@@ -104,9 +104,7 @@
         <span class="text-light mx-3"> Name : <?php echo $_SESSION['user']->name ?></span>
         <span class="text-light mx-3"> Email : <?php echo $_SESSION['user']->email ?></span>
     </div>
-    <div class="logout">
-    <a class="logout text-light px-2" href="auth/logout.php"></i> Logout</a>
-    </div>
+  
   </nav>
 
   <!-- Page Content -->
@@ -124,6 +122,9 @@
                     </li>
                     <li class="nav-item sideNavIcon">
                         <a class="nav-link text-dark" href="#"><i class="fa-solid fa-trash "></i> <span class="sideNavText">trash</span></a>
+                    </li>
+                    <li class="nav-item sideNavIcon">
+                        <a class="nav-link text-dark" href="auth/logout.php"><i class="fa-solid fa-right-from-bracket"></i><span class="sideNavText">Logout</span></a>
                     </li>
                 </ul>
                 </div>
@@ -147,9 +148,7 @@
                                 <button id="saveBtn" class="btn btn-primary btn-sm float-end" name="saveBtn" style="display: none">Save</button>
 
                                 <p id="closeBtn" class="btn btn-danger btn-sm float-end mx-2" onclick="closeBox()" style="display: none">close</p>
-
-                            </form>
-                    
+                            </form>                   
                         </div>
                         <div class="col-md-3"></div>
 
